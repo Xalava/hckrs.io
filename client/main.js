@@ -19,8 +19,8 @@ var getBackground = function() {
   var date = Session.get('date');
   var isNight = date && (date.getHours() < 7 || date.getHours() >= 19);
   
-  if (isNight) 
-    return city.backgroundImageNight || "/img/backgrounds/default_night.jpg";
+  // if (isNight) 
+  //   return city.backgroundImageNight || "/img/backgrounds/default_night.jpg";
   return city.backgroundImage || "/img/backgrounds/default.jpg";
 }
 
